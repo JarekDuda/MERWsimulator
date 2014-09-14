@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1418</width>
+    <height>1028</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>80</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>new defects</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>1131</width>
+      <height>951</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="swMode">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>160</y>
+      <width>119</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GRW</string>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="stationary">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>200</y>
+      <width>119</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stationary</string>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="gradh">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>340</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-20</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="gradv">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>160</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>-20</number>
+    </property>
+    <property name="maximum">
+     <number>20</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="defp">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>50</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="pageStep">
+     <number>19</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="walkers">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>820</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="pageStep">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>790</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Walkers:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>740</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lambda:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lambda">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>740</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nb_walk">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>790</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cych">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>390</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cyclic horizontal</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cycv">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>430</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cyclic vertical</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>310</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>grad x:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>280</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>grad y:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gradx">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>280</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grady">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>310</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="width">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>690</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>10</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>defect prob.:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="defpr">
+    <property name="geometry">
+     <rect>
+      <x>1350</x>
+      <y>10</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="height">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>510</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>510</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Height:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="heightv">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>550</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>heighv</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>610</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Width:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="widthv">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>650</y>
+      <width>65</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pointden">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>883</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Point density</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
