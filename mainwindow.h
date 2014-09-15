@@ -23,6 +23,8 @@ private:
     void draw();
     QImage img;
     QRgb val1=qRgb(0,0,0), val2=qRgb(255,255,255), col;
+    QTimer *timer;
+    bool shdef=false;
 
 public slots:
     void update();
@@ -38,6 +40,8 @@ public slots:
     void setwdth(int);
     void setheight(int);
     void pointden();
+    void setdT(int);
+    void chdef(bool);
 };
 
 #endif // MAINWINDOW_H

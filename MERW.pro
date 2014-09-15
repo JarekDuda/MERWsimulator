@@ -12,6 +12,7 @@ TARGET = MERW
 TEMPLATE = app
 
 QMAKE_CXXFLAGS += -std=c++11
+CONFIG += static
 
 # INCLUDEPATH
 

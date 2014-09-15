@@ -10,6 +10,9 @@
     <height>1028</height>
    </rect>
   </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -31,10 +34,13 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>1131</width>
-      <height>951</height>
+      <y>0</y>
+      <width>1211</width>
+      <height>1021</height>
      </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
     </property>
     <property name="text">
      <string>TextLabel</string>
@@ -44,7 +50,7 @@
     <property name="geometry">
      <rect>
       <x>1260</x>
-      <y>160</y>
+      <y>170</y>
       <width>119</width>
       <height>23</height>
      </rect>
@@ -150,8 +156,8 @@
    <widget class="QSlider" name="walkers">
     <property name="geometry">
      <rect>
-      <x>1240</x>
-      <y>820</y>
+      <x>1250</x>
+      <y>860</y>
       <width>160</width>
       <height>22</height>
      </rect>
@@ -172,8 +178,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>1250</x>
-      <y>790</y>
+      <x>1260</x>
+      <y>830</y>
       <width>65</width>
       <height>19</height>
      </rect>
@@ -186,7 +192,7 @@
     <property name="geometry">
      <rect>
       <x>1250</x>
-      <y>740</y>
+      <y>730</y>
       <width>65</width>
       <height>19</height>
      </rect>
@@ -199,7 +205,7 @@
     <property name="geometry">
      <rect>
       <x>1320</x>
-      <y>740</y>
+      <y>730</y>
       <width>65</width>
       <height>19</height>
      </rect>
@@ -211,8 +217,8 @@
    <widget class="QLabel" name="nb_walk">
     <property name="geometry">
      <rect>
-      <x>1320</x>
-      <y>790</y>
+      <x>1330</x>
+      <y>830</y>
       <width>65</width>
       <height>19</height>
      </rect>
@@ -431,13 +437,58 @@
     <property name="geometry">
      <rect>
       <x>1250</x>
-      <y>883</y>
+      <y>910</y>
       <width>161</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
      <string>Point density</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="deltaT">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>1000</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="singleStep">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>970</y>
+      <width>81</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>time step:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="defects">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>130</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>show defects</string>
     </property>
    </widget>
   </widget>

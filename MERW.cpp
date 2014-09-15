@@ -133,10 +133,12 @@ void MERW::eig_step(bool right=true){            // step of power method searchi
     } 
 }
 void MERW::upd_eig(){             // update eigenvectors - when gradient change, small defect change
+    //for(int i=0; i<wh; i++) (*reig)[i]=1;
     do {for(int i=1;i<steps;i++) eig_step();               // power method for right eigenvector
         normalize(reig); eig_step(); normalize(reig);               
     } while (dif(reig, reigp) >  accuracy);
     if(leig->empty()) copy(reig,leig);                // found eigenvector is a good approximation for left eigenvetor
+    //for(int i=0; i<wh; i++) (*leig)[i]=1;
     do {for(int i=1;i<steps;i++) eig_step(false);           // power method for left eigenvector
         normalize(leig); eig_step(false); lam=normalize(leig);    
     } while (dif(leig, leigp) >  accuracy);
