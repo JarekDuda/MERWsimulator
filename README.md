@@ -7,7 +7,7 @@ A standard way of choosing random walk on a graph (GRW) is: each outgoing edge f
 
 This simple simulator allows to compare behavior of GRW and MERW on defected lattice (a model of semiconductor): in which all but defected nodes have self-loop. Additionally it allows at set potential gradients in both directions to simulate conductance scenarios. 
 
-Some sources: [article]( http://prl.aps.org/abstract/PRL/v102/i16/e160602), [PhD thesis]( http://www.fais.uj.edu.pl/documents/41628/d63bc0b7-cb71-4eba-8a5a-d974256fd065), [slides]( http://dl.dropbox.com/u/12405967/ANSang.pdf).
+Some resources: [Wipedia](https://en.wikipedia.org/wiki/Maximal_entropy_random_walk), [conductance simulator](http://demonstrations.wolfram.com/ElectronConductanceModelsUsingMaximalEntropyRandomWalks/), [article]( http://prl.aps.org/abstract/PRL/v102/i16/e160602), [PhD thesis]( http://www.fais.uj.edu.pl/documents/41628/d63bc0b7-cb71-4eba-8a5a-d974256fd065), [slides](https://www.dropbox.com/s/prwvp0tfbv3yy8l/MERWsem_UJ.pdf).
 
 Created in Qt Creator 3.1.2. [Here is compiled for Windows]( https://dl.dropboxusercontent.com/u/12405967/MERW.zip) with all required files.
 
